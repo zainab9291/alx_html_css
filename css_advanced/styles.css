@@ -1,0 +1,126 @@
+/* styles.css */
+
+/* 1. Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #000; /* fallback */
+  color: white;
+}
+
+/* 2. Header */
+header {
+  position: absolute;
+  width: 100%;
+  top: 100;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header img {
+  height: 40px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* 3. Banner Section */
+main > section:first-of-type {
+  position: relative;
+  height: 150vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url('./images/Object.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 0;
+}
+
+
+main h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+main span {
+  font-size: 16px;
+  margin: 0 10px;
+  letter-spacing: 2px;
+}
+
+
+main button {
+    position: relative;
+  background: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;   
+  align-items: center;
+}
+
+/* 4. Learn from the pros */
+main h2 {
+  margin-top: 80px;
+  font-size: 28px;
+}
+
+main h2 span {
+  color: #C271FF;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* this aligns everything to center horizontally */
+  text-align: center;
+}
+
+
+
+.hero-content button {
+  background: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
