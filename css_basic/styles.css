@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-/* this*/
+
 /* 2. Make <main> a flex container in row direction */
 main {
   display: flex;
