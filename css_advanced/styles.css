@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: #000; /* fallback */
+  background: white; /* fallback */
   color: white;
 }
 
@@ -61,6 +61,7 @@ main > section:first-of-type {
   justify-content: center;
   text-align: center;
   padding: 100px 20px 0;
+  /*font-family: 'Spin Cycle OT' */
 }
 
 
@@ -68,6 +69,7 @@ main h1 {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 main span {
@@ -162,4 +164,307 @@ h2 span {
   font-weight: inherit; /* keep same font weight */
   font-family: inherit; /* keep same font family */
   font-size: inherit; /* keep same font size */
+}
+.quote-section {
+  max-width: 900px; /* a bit narrower */
+  margin: 60px auto;
+  padding: 0 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  align-items: center;   /* vertical align center */
+  gap: 30px;
+  flex-wrap: wrap;       /* so on small screens it stacks */
+}
+
+.quote-section > div:first-child img {
+  width: 150px;          /* smaller image */
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.quote-section > div:last-child {
+  max-width: 600px;
+}
+
+.quote-section blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 6px solid #C271FF; /* purple highlight */
+  color: #ccc;
+}
+
+.quote-section h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.quote-section p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+}
+.quote-section {
+  background-color: #6a3dcc; /* a nice purple */
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* rest stays the same */
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.thumbnail-container img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+  background: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail-container:hover .play-button {
+  opacity: 1;
+}
+
+.video-card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.video-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.instructor img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instructor h4 {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #333;
+}
+
+.rating-stars {
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: auto;
+}
+
+@media (max-width: 500px) {
+  .instructor {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-card {
+  width: 180px;
+  background: transparent; /* Removed white background */
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: none; /* Optional: remove shadow if you want it fully transparent */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.thumbnail-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.thumbnail-container img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  background: none;
+}
+.video-section h2 {
+  text-align: center;
+  font-size: 1.2rem; /* smaller size */
+  color: black;
+}
+
+.purple-text {
+  color: purple;
+}
+.membership-section {
+  background-color: #0b1220; /* غامق */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.membership-section h2 span {
+  color: #a362ea; /* purple لكلمة Free */
+  font-weight: bold;
+}
+
+.membership-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.membership-feature {
+  max-width: 200px;
+}
+
+.membership-feature img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.membership-feature h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.membership-feature p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.register-btn {
+  background: #a362ea;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #914ede;
+}
+.faq-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
 }
