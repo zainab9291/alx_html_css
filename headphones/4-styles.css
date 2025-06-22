@@ -187,6 +187,7 @@ input:focus, textarea:focus {
   position: relative;
 }
 
+
 /* Top bar with logo and nav */
 .hero-top-bar {
   display: flex;
